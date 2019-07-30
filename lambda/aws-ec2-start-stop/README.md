@@ -6,9 +6,10 @@
 - We can able to start/stop instance within a certian time frame without manual trigger.
 
 
-## Services involved in this scenario
+### Services involved in this scenario
 
 1.IAM
+
 2.Ec2
 
 - Make sure one/more instances are running.
@@ -23,8 +24,10 @@
 - Select rule type:***Schedule expression***
   Set cron or value like follows:
 
-### Rate expressions
+Rate expressions
+
 ***Syntax***
+
 ```rate(value unit)```
 Valid values: minute | minutes | hour | hours | day | days
 Example: rate(5 minutes)
@@ -34,8 +37,9 @@ Example: rate(5 minutes)
 If the value is equal to 1, then the unit must be singular. Similarly, for values greater than 1, the unit must be plural. For example, rate(1 hours) and rate(5 hour) are not valid, but rate(1 hour) and rate(5 hours) are valid.
 ```
 
-### Cron Exoressions
+Cron Exoressions
 ***Syntax***
+
 ```cron(fileds)```
 
 ***Fileds***
@@ -64,6 +68,12 @@ If the value is equal to 1, then the unit must be singular. Similarly, for value
 * The W wildcard in the Day-of-month field specifies a weekday. In the Day-of-month field, 3W specifies the day closest to the third weekday of the month.
 
 * The # wildcard in the Day-of-week field specifies a certain instance of the specified day of the week within a month. For example, 3#2 would be the second Tuesday of the month: the 3 refers to Tuesday because it is the third day of each week, and the 2 refers to the second day of that type within the month.
+
+***Limits***
+
+* You can't specify the Day-of-month and Day-of-week fields in the same cron expression. If you specify a value (or a *) in one of the fields, you must use a ? (question mark) in the other.
+
+* Cron expressions that lead to rates faster than 1 minute are not supported.
 
 4.Lambda
 
