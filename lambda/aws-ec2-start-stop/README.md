@@ -25,7 +25,7 @@
 - Select Runtime: Python.X
 - Under Permissions:***Select existing role*** and select Previously created IAM role.
 - Set ***Time out*** to 20s
-- Remove auto generated code and add the ***start-stop-aws-ec2-instance.py** as Function code 
+- Remove auto generated code and add the ***start/stop-aws-ec2-instance.py** as Function code 
 
 ### 4.CloudWatch
 
