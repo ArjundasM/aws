@@ -17,6 +17,7 @@
 - Note down the aws region which deployed the instances
 
 3.CloudWatch
+
 - Create CloudWatch Event trigger
 - Rule-->**Create new rule***
 - Enter ***Rule name***
@@ -24,7 +25,7 @@
 - Select rule type:***Schedule expression***
   Set cron or value like follows:
 
-Rate expressions
+#### Rate expressions
 
 ***Syntax***
 
@@ -32,12 +33,8 @@ Rate expressions
 Valid values: minute | minutes | hour | hours | day | days
 Example: rate(5 minutes)
 
-***Note***
-```
-If the value is equal to 1, then the unit must be singular. Similarly, for values greater than 1, the unit must be plural. For example, rate(1 hours) and rate(5 hour) are not valid, but rate(1 hour) and rate(5 hours) are valid.
-```
+#### Cron Exoressions
 
-Cron Exoressions
 ***Syntax***
 
 ```cron(fileds)```
