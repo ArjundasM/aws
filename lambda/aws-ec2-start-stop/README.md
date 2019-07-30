@@ -27,9 +27,9 @@
   Set ***cron*** or ***rate*** expressions like follows:
 
 
-- Rate expressions
+***Rate expressions***
 
-***Syntax***
+* Syntax
 
 ```rate(value unit)```
 
@@ -37,9 +37,9 @@ Valid values: minute | minutes | hour | hours | day | days
 
 Example: rate(5 minutes)
 
-- Cron Exoressions
+***Cron Exoressions***
 
-***Syntax***
+* Syntax
 
 ```cron(fileds)```
 
