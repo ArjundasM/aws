@@ -38,12 +38,13 @@ If the value is equal to 1, then the unit must be singular. Similarly, for value
 ```cron(fileds)```
 
 ***Fileds***
-Field	        Values	        Wildcards
-Minutes         0-59            , - * /
-Hours           0-23            , - * /
-Day-of-month    1-31            , - * ? / L W
-Month           1-12 or JAN-DEC , - * /
-Day-of-week     1-7 or SUN-SAT  , - * ? L #
+|Field	         |Values	  |Wildcards     |
+--------------------------------------------------
+|Minutes         |0-59            |, - * /       |
+|Hours           |0-23            |, - * /       |
+|Day-of-month    |1-31            |, - * ? / L W |
+|Month           |1-12 or JAN-DEC |, - * /       |
+|Day-of-week     |1-7 or SUN-SAT  |, - * ? L #   |
 Year            1970-2199       , - * /
 
 4.Lambda
