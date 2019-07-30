@@ -38,8 +38,9 @@ If the value is equal to 1, then the unit must be singular. Similarly, for value
 ```cron(fileds)```
 
 ***Fileds***
+
 |Field	         |Values	  |Wildcards     |
---------------------------------------------------
+|---             |---|---|
 |Minutes         |0-59            |, - * /       |
 |Hours           |0-23            |, - * /       |
 |Day-of-month    |1-31            |, - * ? / L W |
