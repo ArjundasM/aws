@@ -27,7 +27,7 @@
   Set cron or value expressions like follows:
 
 Rate expressions
-================
+----------------
 
 ***Syntax***
 
@@ -38,7 +38,7 @@ Valid values: minute | minutes | hour | hours | day | days
 Example: rate(5 minutes)
 
 Cron Exoressions
-================
+----------------
 
 ***Syntax***
 
