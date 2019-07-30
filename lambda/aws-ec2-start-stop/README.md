@@ -24,10 +24,10 @@
 - Enter ***Rule description***
 - Select rule type:***Schedule expression***
 
-  Set cron or value expressions like follows:
+  Set ***cron*** or ***rate*** expressions like follows:
 
-Rate expressions
-----------------
+
+- Rate expressions
 
 ***Syntax***
 
@@ -37,8 +37,7 @@ Valid values: minute | minutes | hour | hours | day | days
 
 Example: rate(5 minutes)
 
-Cron Exoressions
-----------------
+- Cron Exoressions
 
 ***Syntax***
 
